@@ -2,10 +2,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Times New Roman', Times, sans-serif;
+  font-family: "Times New Roman", Times, sans-serif;
 }
 
-h1, h2, h3, h4, h4, h5 {
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h4,
+h5 {
   text-transform: uppercase;
   font-family: sans-serif;
 }
@@ -43,7 +52,7 @@ a {
 }
 
 .navbar {
-  background: #00887A;
+  background: #00887a;
   height: 80px;
   position: sticky;
   top: 0;
@@ -61,7 +70,7 @@ a {
 .navbar_container_brand {
   position: relative;
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 20px;
   top: 15px;
 }
@@ -91,7 +100,7 @@ a {
 }
 
 .navbar_container_menu .navbar_item:hover {
-  border-bottom: 2px solid #FFFFFF;
+  border-bottom: 2px solid #ffffff;
 }
 
 .navbar_container_toggle {
@@ -103,7 +112,7 @@ a {
 }
 
 .navbar .join-us-btn {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #000;
   font-size: 1.3rem;
   border-radius: 50px;
@@ -112,8 +121,8 @@ a {
 
 .navbar .join-us-btn:hover {
   background-color: transparent;
-  border: 1px solid #FFFFFF;
-  color: #FFFFFF;
+  border: 1px solid #ffffff;
+  color: #ffffff;
 }
 
 @media screen and (max-width: 960px) {
@@ -132,28 +141,28 @@ a {
     right: 10px;
     width: 3rem;
     height: 5px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     border-radius: 50px;
     z-index: 1;
     cursor: pointer;
     transition: 0.6s ease all;
   }
   .navbar_container_toggle::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 1rem;
     width: 2.4rem;
     height: 5px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     border-radius: 50px;
   }
   .navbar_container_toggle::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 2rem;
     width: 2rem;
     height: 5px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     border-radius: 50px;
   }
   .navbar_container_toggle.active {
@@ -171,7 +180,7 @@ a {
     height: 100vh;
     padding-top: 8rem;
     transform: translateY(-1500px);
-    background-color: #00887A;
+    background-color: #00887a;
     position: relative;
     flex-direction: column;
     transition: 0.6s ease all;
@@ -201,7 +210,7 @@ a {
 .initiative-block {
   display: flex;
   align-items: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .initiative-block .col {
@@ -221,7 +230,7 @@ a {
 
 .initiative-block .col .col-block h4 {
   text-align: center;
-  border-bottom: 3px solid #00887A;
+  border-bottom: 3px solid #00887a;
   padding-bottom: 0.4rem;
   margin-bottom: 26px;
 }
@@ -263,7 +272,7 @@ a {
 
 .whoWeAre-section {
   background-color: #181818;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .whoWeAre-block {
@@ -272,7 +281,7 @@ a {
 
 .whoWeAre-block_info h1 {
   font-family: sans-serif;
-  color: #00887A;
+  color: #00887a;
   text-shadow: 9px 2px 6px #000000;
 }
 
@@ -325,7 +334,7 @@ a {
 }
 
 .courses-section {
-  background-color: #00887A;
+  background-color: #00887a;
 }
 
 .courses-section .courses-block {
@@ -334,7 +343,7 @@ a {
 }
 
 .courses-section .courses-block h1 {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .courses-section .courses-block .course-list {
@@ -355,7 +364,7 @@ a {
 
 .courses-section .courses-block .course-list_item h3 {
   margin-top: 10px;
-  color: #FFCCBC;
+  color: #ffccbc;
 }
 
 .courses-section .courses-block .course-list_item:hover {
@@ -391,7 +400,7 @@ a {
 
 .contactUs-block_info h1 {
   font-family: sans-serif;
-  color: #00887A;
+  color: #00887a;
 }
 
 .contactUs-block_info p {
@@ -419,10 +428,16 @@ a {
 }
 
 .faqs-section {
-  background: linear-gradient(#000000d4, #000000cf), url(../img/pexels-photo-266246.jpeg);
+  background: linear-gradient(#000000d9, #000000f0), url(../img/pexels-photo-266246.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.faqs-section h1 {
+  text-align: center;
+  color: #ffffff;
+  padding-top: 50px;
 }
 
 .faq-block {
@@ -435,32 +450,51 @@ a {
   margin: 0 auto;
 }
 
-.faq-block_col .box-1, .faq-block_col .box-2, .faq-block_col .box-3, .faq-block_col .box-4, .faq-block_col .box-5 {
-  color: #FFFFFF;
+.faq-block_col .box-1,
+.faq-block_col .box-2,
+.faq-block_col .box-3,
+.faq-block_col .box-4,
+.faq-block_col .box-5 {
+  color: #ffffff;
   padding: 1rem 2rem;
-  transition: 0.6s ease all;
+  transition: 650ms ease;
 }
 
-.faq-block_col .box-1_head, .faq-block_col .box-2_head, .faq-block_col .box-3_head, .faq-block_col .box-4_head, .faq-block_col .box-5_head {
+.faq-block_col .box-1_head,
+.faq-block_col .box-2_head,
+.faq-block_col .box-3_head,
+.faq-block_col .box-4_head,
+.faq-block_col .box-5_head {
   font-size: 1.4rem;
   letter-spacing: 3px;
 }
 
-.faq-block_col .box-1_info, .faq-block_col .box-2_info, .faq-block_col .box-3_info, .faq-block_col .box-4_info, .faq-block_col .box-5_info {
+.faq-block_col .box-1_info,
+.faq-block_col .box-2_info,
+.faq-block_col .box-3_info,
+.faq-block_col .box-4_info,
+.faq-block_col .box-5_info {
   display: none;
-  margin-top: 5px;
+  margin-top: 10px;
   width: 70%;
 }
 
-.faq-block_col .box-1, .faq-block_col .box-3, .faq-block_col .box-5 {
+.faq-block_col .box-1,
+.faq-block_col .box-3,
+.faq-block_col .box-5 {
   background: #292929;
 }
 
-.faq-block_col .box-2, .faq-block_col .box-4 {
+.faq-block_col .box-2,
+.faq-block_col .box-4 {
   background: #131111;
 }
 
-.box-1:hover .box-1_info, .box-2:hover .box-2_info, .box-3:hover .box-3_info, .box-4:hover .box-4_info, .box-5:hover .box-5_info {
+.box-1:hover .box-1_info,
+.box-2:hover .box-2_info,
+.box-3:hover .box-3_info,
+.box-4:hover .box-4_info,
+.box-5:hover .box-5_info {
   cursor: pointer;
   display: block;
 }
@@ -472,8 +506,10 @@ a {
   .faq-block_col {
     width: 100%;
   }
-  .faq-block_col .box-1_info, .faq-block_col .box-2_info,
-  .faq-block_col .box-3_info, .faq-block_col .box-4_info,
+  .faq-block_col .box-1_info,
+  .faq-block_col .box-2_info,
+  .faq-block_col .box-3_info,
+  .faq-block_col .box-4_info,
   .faq-block_col .box-5_info {
     width: 100%;
   }
@@ -512,7 +548,7 @@ header {
 }
 
 .banner_para {
-  color: #D3E3FC;
+  color: #d3e3fc;
   font-size: 1.2rem;
   line-height: 1.6;
   width: 50%;
@@ -532,7 +568,7 @@ header {
 .banner_join-btn:hover {
   background-color: transparent;
   border: 1px solid #02af9e;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 @media screen and (max-width: 786px) {
