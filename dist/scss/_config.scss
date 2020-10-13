@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, sans-serif;
+}
+
+h1,h2,h3,h4,h4,h5{
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h4{
+    font-size: 1.5rem;
+}
+
+p{
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+ul li{
+    list-style-type: none;
+}
+ 
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 120px 0;
+}
+
+$darkGreen: #00887A;
+$skinClr: #FFCCBC;
+$liteWhite: #D3E3FC;
+$liter: #FFFFFF;
+
+$marg-align: 0 auto;
+
+
+@mixin transition-ease {
+    transition: 0.6s ease all;
+}
+
+@mixin  tab-media {
+    @media screen and (max-width: 786px) {
+        @content
+    }
+}
+
+@mixin  mobile-media {
+    @media screen and (max-width: 542px) {
+        @content
+    }
+}

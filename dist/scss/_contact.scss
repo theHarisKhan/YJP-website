@@ -1,0 +1,36 @@
+.contactUs-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &_info{
+        text-align: center;
+        h1{
+            font-family: sans-serif;
+            color: $darkGreen;
+        }
+        p{
+            width: 70%;
+            margin: 1rem auto;
+        }
+    }
+    &_infograph{
+        img{
+            width: 650px;
+        }
+    }
+}
+
+@include tab-media{
+    .contactUs-block_infograph img {
+        width: 550px;
+    }
+}
+
+@include mobile-media{
+    .contactUs-block_infograph img {
+        width: 275px;
+    }
+    .contactUs-block_info h1 {
+        font-size: 2.5rem;
+    }
+}

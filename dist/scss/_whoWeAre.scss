@@ -1,0 +1,58 @@
+.whoWeAre-section{
+    background-color: #181818;
+    color: $liter;
+}
+
+.whoWeAre-block{
+    text-align: center;
+    &_info{
+        h1{
+            font-family: sans-serif;
+            color: $darkGreen;
+            text-shadow: 9px 2px 6px #000000;
+        }
+        h3{
+            margin: 10px 0;
+        }
+        p{
+            width: 70%;
+            margin: $marg-align;
+        }
+    }
+    &_infographs{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        .infographs-item{
+            margin: 0 1.6rem;
+            img{
+                width: 150px;
+                height: 150px;
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
+}
+
+@include tab-media{
+    .whoWeAre-block_info p {
+        width: 100%;
+    }
+}
+
+@include mobile-media{
+    .whoWeAre-block_infographs{
+        flex-direction: column;
+    }
+    .whoWeAre-block_infographs .infographs-item img {
+        width: 130px;
+        height: 130px;
+    }
+    .whoWeAre-block_infographs .infographs-item {
+        margin: 1rem;
+    }
+    .whoWeAre-block_info h1 {
+        font-size: 2.5rem;
+    }
+}

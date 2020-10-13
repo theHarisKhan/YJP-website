@@ -1,0 +1,60 @@
+.faqs-section{
+    background: linear-gradient(#000000d4, #000000cf), url(../img/pexels-photo-266246.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.faq-block{
+    display: flex;
+
+    &_col{
+        width: 45%;
+        height: 300px;
+        margin: $marg-align;
+
+        .box-1,.box-2,.box-3,.box-4,.box-5{
+            color: $liter;
+            padding: 1rem 2rem;
+            @include transition-ease;
+
+            &_head{
+                font-size: 1.4rem;
+                letter-spacing: 3px;
+            }
+            &_info{
+                display: none;
+                margin-top: 5px;
+                width: 70%;
+            }
+        }
+        .box-1,.box-3,.box-5{
+            background: #292929;
+        }
+        .box-2,.box-4{
+            background: #131111;
+        }
+        
+    }
+}
+
+.box-1:hover .box-1_info,.box-2:hover .box-2_info,.box-3:hover .box-3_info,.box-4:hover .box-4_info,.box-5:hover .box-5_info{
+    cursor: pointer;
+    display: block;
+}
+
+@include mobile-media{
+    .faq-block{
+        display: block;
+
+        &_col{
+            width: 100%;
+
+            .box-1_info, .box-2_info, 
+            .box-3_info, .box-4_info, 
+            .box-5_info {
+                width: 100%;
+            }
+        }
+    }
+}
