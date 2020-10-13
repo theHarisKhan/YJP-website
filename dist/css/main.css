@@ -324,6 +324,61 @@ a {
   }
 }
 
+.courses-section {
+  background-color: #00887A;
+}
+
+.courses-section .courses-block {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.courses-section .courses-block h1 {
+  color: #FFFFFF;
+}
+
+.courses-section .courses-block .course-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 50px;
+}
+
+.courses-section .courses-block .course-list_item {
+  margin: 20px 10px;
+  transition: transform 450ms ease;
+}
+
+.courses-section .courses-block .course-list_item img {
+  width: 130px;
+  height: 130px;
+}
+
+.courses-section .courses-block .course-list_item h3 {
+  margin-top: 10px;
+  color: #FFCCBC;
+}
+
+.courses-section .courses-block .course-list_item:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 786px) {
+  .courses-section .courses-block .course-list_item img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 542px) {
+  .courses-section .courses-block .course-list {
+    grid-template-columns: 1fr 1fr;
+  }
+  .courses-section .courses-block .course-list_item img {
+    width: 90px;
+    height: 90px;
+  }
+}
+
 .contactUs-block {
   display: flex;
   flex-direction: column;

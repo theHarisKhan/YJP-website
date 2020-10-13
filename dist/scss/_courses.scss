@@ -1,0 +1,51 @@
+.courses-section {
+  background-color: $darkGreen;
+
+  .courses-block {
+    padding: 100px 0;
+    text-align: center;
+
+    h1 {
+      color: $liter;
+    }
+
+    .course-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin-top: 50px;
+
+      &_item {
+        margin: 20px 10px;
+        transition: transform 450ms ease;
+        img {
+          width: 130px;
+          height: 130px;
+        }
+        h3 {
+          margin-top: 10px;
+          color: $skinClr;
+        }
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}
+
+@include tab-media {
+  .courses-section .courses-block .course-list_item img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@include mobile-media {
+  .courses-section .courses-block .course-list {
+    grid-template-columns: 1fr 1fr;
+  }
+  .courses-section .courses-block .course-list_item img {
+    width: 90px;
+    height: 90px;
+  }
+}
