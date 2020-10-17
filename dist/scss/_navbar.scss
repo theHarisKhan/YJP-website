@@ -16,10 +16,11 @@
       position: relative;
       text-decoration: none;
       color: $liter;
-      font-size: 20px;
       top: 15px;
 
       p {
+        font-size: 20px;
+        line-height: 1.2;
         letter-spacing: 0.1rem;
       }
       span {
